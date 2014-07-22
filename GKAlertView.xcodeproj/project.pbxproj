@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C114CE51197EF07200A7AE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CE50197EF07200A7AE08 /* AppDelegate.swift */; };
+		C114CE53197EF07200A7AE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CE52197EF07200A7AE08 /* ViewController.swift */; };
+		C114CE56197EF07200A7AE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114CE54197EF07200A7AE08 /* Main.storyboard */; };
+		C114CE58197EF07200A7AE08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C114CE57197EF07200A7AE08 /* Images.xcassets */; };
+		C114CE64197EF07200A7AE08 /* GKAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CE63197EF07200A7AE08 /* GKAlertViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C114CE5E197EF07200A7AE08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C114CE43197EF07200A7AE08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C114CE4A197EF07200A7AE08;
+			remoteInfo = GKAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C114CE4B197EF07200A7AE08 /* GKAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C114CE4F197EF07200A7AE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C114CE50197EF07200A7AE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C114CE52197EF07200A7AE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C114CE55197EF07200A7AE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C114CE57197EF07200A7AE08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C114CE5D197EF07200A7AE08 /* GKAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C114CE62197EF07200A7AE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C114CE63197EF07200A7AE08 /* GKAlertViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAlertViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C114CE48197EF07200A7AE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C114CE5A197EF07200A7AE08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C114CE42197EF07200A7AE08 = {
+			isa = PBXGroup;
+			children = (
+				C114CE4D197EF07200A7AE08 /* GKAlertView */,
+				C114CE60197EF07200A7AE08 /* GKAlertViewTests */,
+				C114CE4C197EF07200A7AE08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C114CE4C197EF07200A7AE08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE4B197EF07200A7AE08 /* GKAlertView.app */,
+				C114CE5D197EF07200A7AE08 /* GKAlertViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C114CE4D197EF07200A7AE08 /* GKAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE50197EF07200A7AE08 /* AppDelegate.swift */,
+				C114CE52197EF07200A7AE08 /* ViewController.swift */,
+				C114CE54197EF07200A7AE08 /* Main.storyboard */,
+				C114CE57197EF07200A7AE08 /* Images.xcassets */,
+				C114CE4E197EF07200A7AE08 /* Supporting Files */,
+			);
+			path = GKAlertView;
+			sourceTree = "<group>";
+		};
+		C114CE4E197EF07200A7AE08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE4F197EF07200A7AE08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C114CE60197EF07200A7AE08 /* GKAlertViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE63197EF07200A7AE08 /* GKAlertViewTests.swift */,
+				C114CE61197EF07200A7AE08 /* Supporting Files */,
+			);
+			path = GKAlertViewTests;
+			sourceTree = "<group>";
+		};
+		C114CE61197EF07200A7AE08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE62197EF07200A7AE08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C114CE4A197EF07200A7AE08 /* GKAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C114CE67197EF07200A7AE08 /* Build configuration list for PBXNativeTarget "GKAlertView" */;
+			buildPhases = (
+				C114CE47197EF07200A7AE08 /* Sources */,
+				C114CE48197EF07200A7AE08 /* Frameworks */,
+				C114CE49197EF07200A7AE08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKAlertView;
+			productName = GKAlertView;
+			productReference = C114CE4B197EF07200A7AE08 /* GKAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C114CE5C197EF07200A7AE08 /* GKAlertViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C114CE6A197EF07200A7AE08 /* Build configuration list for PBXNativeTarget "GKAlertViewTests" */;
+			buildPhases = (
+				C114CE59197EF07200A7AE08 /* Sources */,
+				C114CE5A197EF07200A7AE08 /* Frameworks */,
+				C114CE5B197EF07200A7AE08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C114CE5F197EF07200A7AE08 /* PBXTargetDependency */,
+			);
+			name = GKAlertViewTests;
+			productName = GKAlertViewTests;
+			productReference = C114CE5D197EF07200A7AE08 /* GKAlertViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C114CE43197EF07200A7AE08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Aplic GmbH";
+				TargetAttributes = {
+					C114CE4A197EF07200A7AE08 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C114CE5C197EF07200A7AE08 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C114CE4A197EF07200A7AE08;
+					};
+				};
+			};
+			buildConfigurationList = C114CE46197EF07200A7AE08 /* Build configuration list for PBXProject "GKAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C114CE42197EF07200A7AE08;
+			productRefGroup = C114CE4C197EF07200A7AE08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C114CE4A197EF07200A7AE08 /* GKAlertView */,
+				C114CE5C197EF07200A7AE08 /* GKAlertViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C114CE49197EF07200A7AE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C114CE56197EF07200A7AE08 /* Main.storyboard in Resources */,
+				C114CE58197EF07200A7AE08 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C114CE5B197EF07200A7AE08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C114CE47197EF07200A7AE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C114CE53197EF07200A7AE08 /* ViewController.swift in Sources */,
+				C114CE51197EF07200A7AE08 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C114CE59197EF07200A7AE08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C114CE64197EF07200A7AE08 /* GKAlertViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C114CE5F197EF07200A7AE08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C114CE4A197EF07200A7AE08 /* GKAlertView */;
+			targetProxy = C114CE5E197EF07200A7AE08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C114CE54197EF07200A7AE08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C114CE55197EF07200A7AE08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C114CE65197EF07200A7AE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C114CE66197EF07200A7AE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C114CE68197EF07200A7AE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GKAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C114CE69197EF07200A7AE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GKAlertView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C114CE6B197EF07200A7AE08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GKAlertView.app/GKAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GKAlertViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		C114CE6C197EF07200A7AE08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GKAlertView.app/GKAlertView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GKAlertViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C114CE46197EF07200A7AE08 /* Build configuration list for PBXProject "GKAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C114CE65197EF07200A7AE08 /* Debug */,
+				C114CE66197EF07200A7AE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C114CE67197EF07200A7AE08 /* Build configuration list for PBXNativeTarget "GKAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C114CE68197EF07200A7AE08 /* Debug */,
+				C114CE69197EF07200A7AE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C114CE6A197EF07200A7AE08 /* Build configuration list for PBXNativeTarget "GKAlertViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C114CE6B197EF07200A7AE08 /* Debug */,
+				C114CE6C197EF07200A7AE08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C114CE43197EF07200A7AE08 /* Project object */;
+}
