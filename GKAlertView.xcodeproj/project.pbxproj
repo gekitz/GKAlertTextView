@@ -12,6 +12,10 @@
 		C114CE56197EF07200A7AE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C114CE54197EF07200A7AE08 /* Main.storyboard */; };
 		C114CE58197EF07200A7AE08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C114CE57197EF07200A7AE08 /* Images.xcassets */; };
 		C114CE64197EF07200A7AE08 /* GKAlertViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CE63197EF07200A7AE08 /* GKAlertViewTests.swift */; };
+		C114CE6E197EF0E500A7AE08 /* GKAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114CE6D197EF0E500A7AE08 /* GKAlertView.swift */; };
+		C1A10ADC1980362F0013AA29 /* GKTextAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A10ADB1980362F0013AA29 /* GKTextAlertContentView.swift */; };
+		C1A10ADE198036450013AA29 /* GKTextAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A10ADD198036450013AA29 /* GKTextAlertContentView.xib */; };
+		C1A10AE0198038A50013AA29 /* GKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A10ADF198038A50013AA29 /* GKTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		C114CE5D197EF07200A7AE08 /* GKAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C114CE62197EF07200A7AE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C114CE63197EF07200A7AE08 /* GKAlertViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAlertViewTests.swift; sourceTree = "<group>"; };
+		C114CE6D197EF0E500A7AE08 /* GKAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAlertView.swift; sourceTree = "<group>"; };
+		C1A10ADB1980362F0013AA29 /* GKTextAlertContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTextAlertContentView.swift; sourceTree = "<group>"; };
+		C1A10ADD198036450013AA29 /* GKTextAlertContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKTextAlertContentView.xib; sourceTree = "<group>"; };
+		C1A10ADF198038A50013AA29 /* GKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 			children = (
 				C114CE50197EF07200A7AE08 /* AppDelegate.swift */,
 				C114CE52197EF07200A7AE08 /* ViewController.swift */,
+				C179E0E31980EE6B0049B00B /* GKAlertView */,
 				C114CE54197EF07200A7AE08 /* Main.storyboard */,
 				C114CE57197EF07200A7AE08 /* Images.xcassets */,
 				C114CE4E197EF07200A7AE08 /* Supporting Files */,
@@ -107,6 +116,17 @@
 				C114CE62197EF07200A7AE08 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C179E0E31980EE6B0049B00B /* GKAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C114CE6D197EF0E500A7AE08 /* GKAlertView.swift */,
+				C1A10ADB1980362F0013AA29 /* GKTextAlertContentView.swift */,
+				C1A10ADD198036450013AA29 /* GKTextAlertContentView.xib */,
+				C1A10ADF198038A50013AA29 /* GKTextField.swift */,
+			);
+			name = GKAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A10ADE198036450013AA29 /* GKTextAlertContentView.xib in Resources */,
 				C114CE56197EF07200A7AE08 /* Main.storyboard in Resources */,
 				C114CE58197EF07200A7AE08 /* Images.xcassets in Resources */,
 			);
@@ -208,7 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A10AE0198038A50013AA29 /* GKTextField.swift in Sources */,
+				C1A10ADC1980362F0013AA29 /* GKTextAlertContentView.swift in Sources */,
 				C114CE53197EF07200A7AE08 /* ViewController.swift in Sources */,
+				C114CE6E197EF0E500A7AE08 /* GKAlertView.swift in Sources */,
 				C114CE51197EF07200A7AE08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +352,7 @@
 				INFOPLIST_FILE = GKAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -339,6 +364,7 @@
 				INFOPLIST_FILE = GKAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -395,6 +421,7 @@
 				C114CE69197EF07200A7AE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C114CE6A197EF07200A7AE08 /* Build configuration list for PBXNativeTarget "GKAlertViewTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +430,7 @@
 				C114CE6C197EF07200A7AE08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,8 @@ class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self._showAlert(nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //Private
+    
+    @IBAction func _showAlert(sender: UIButton?) {
+        let alert = GKAlertView(frame: CGRectMake(0, 0, 320, 568))
+        alert.completion = {(value: String) in
+            println("Got a value from the block \(value)")
+            alert.show(false)
+        };
+        alert.show(true)
+    }
 }
 
