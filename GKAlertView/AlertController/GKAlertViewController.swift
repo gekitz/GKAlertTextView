@@ -10,21 +10,6 @@ import UIKit
 
 class GKAlertViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    private let backgroundImageView: UIImageView = {
-        let backgroundImageView = UIImageView(frame: CGRectZero)
-        return backgroundImageView
-    }()
-    
-    var backgroundImage: UIImage {
-        get {
-            return self.backgroundImageView.image
-        }
-        set {
-            let image = newValue.applyDarkEffect()
-            self.backgroundImageView.image = image
-        }
-    }
-    
     init(coder aDecoder: NSCoder!)  {
         super.init(coder: aDecoder)
         self.transitioningDelegate = self
@@ -37,13 +22,11 @@ class GKAlertViewController: UIViewController, UIViewControllerTransitioningDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.addSubview(self.backgroundImageView)
+        self.view.backgroundColor = UIColor.greenColor()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.backgroundImageView.frame = self.view.bounds
     }
     
     // MARK: - Transition
@@ -53,7 +36,11 @@ class GKAlertViewController: UIViewController, UIViewControllerTransitioningDele
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
-        return GKAlertViewShowTransition()
+        return GKAlertViewHideTransition()
+    }
+    
+    func _didTapOutSideController(sender: UITapGestureRecognizer) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
