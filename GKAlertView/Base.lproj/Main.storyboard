@@ -25,11 +25,22 @@
                                     <action selector="_showAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gJD-X7-ZXd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-1B-QRg">
+                                <rect key="frame" x="277" y="330" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="_showAlertController:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z6R-rq-vUj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="tdg-og-0sW" secondAttribute="centerY" id="CMI-Wd-SMn"/>
+                            <constraint firstItem="NCG-1B-QRg" firstAttribute="top" secondItem="tdg-og-0sW" secondAttribute="bottom" constant="15" id="D1L-68-6sn"/>
                             <constraint firstAttribute="centerX" secondItem="tdg-og-0sW" secondAttribute="centerX" id="JZS-Bk-Fpj"/>
+                            <constraint firstItem="NCG-1B-QRg" firstAttribute="leading" secondItem="tdg-og-0sW" secondAttribute="leading" id="bI6-Vd-GhU"/>
                         </constraints>
                     </view>
                 </viewController>

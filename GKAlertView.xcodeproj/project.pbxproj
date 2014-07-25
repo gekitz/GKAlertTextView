@@ -16,6 +16,10 @@
 		C1A10ADC1980362F0013AA29 /* GKTextAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A10ADB1980362F0013AA29 /* GKTextAlertContentView.swift */; };
 		C1A10ADE198036450013AA29 /* GKTextAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A10ADD198036450013AA29 /* GKTextAlertContentView.xib */; };
 		C1A10AE0198038A50013AA29 /* GKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A10ADF198038A50013AA29 /* GKTextField.swift */; };
+		C1AC438E1981917E008A33BD /* GKAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC43891981917E008A33BD /* GKAlertViewController.swift */; };
+		C1AC438F1981917E008A33BD /* GKAlertViewHideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC438A1981917E008A33BD /* GKAlertViewHideTransition.swift */; };
+		C1AC43901981917E008A33BD /* GKAlertViewShowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC438B1981917E008A33BD /* GKAlertViewShowTransition.swift */; };
+		C1AC43911981917E008A33BD /* UIImage+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AC438D1981917E008A33BD /* UIImage+Effects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,12 @@
 		C1A10ADB1980362F0013AA29 /* GKTextAlertContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTextAlertContentView.swift; sourceTree = "<group>"; };
 		C1A10ADD198036450013AA29 /* GKTextAlertContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKTextAlertContentView.xib; sourceTree = "<group>"; };
 		C1A10ADF198038A50013AA29 /* GKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKTextField.swift; sourceTree = "<group>"; };
+		C1AC43881981917E008A33BD /* GKAlertView-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKAlertView-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1AC43891981917E008A33BD /* GKAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAlertViewController.swift; sourceTree = "<group>"; };
+		C1AC438A1981917E008A33BD /* GKAlertViewHideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAlertViewHideTransition.swift; sourceTree = "<group>"; };
+		C1AC438B1981917E008A33BD /* GKAlertViewShowTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAlertViewShowTransition.swift; sourceTree = "<group>"; };
+		C1AC438C1981917E008A33BD /* UIImage+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Effects.h"; sourceTree = "<group>"; };
+		C1AC438D1981917E008A33BD /* UIImage+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Effects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 		C114CE4D197EF07200A7AE08 /* GKAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				C1AC43871981917E008A33BD /* GKAlertController */,
 				C114CE50197EF07200A7AE08 /* AppDelegate.swift */,
 				C114CE52197EF07200A7AE08 /* ViewController.swift */,
 				C179E0E31980EE6B0049B00B /* GKAlertView */,
@@ -127,6 +138,20 @@
 				C1A10ADF198038A50013AA29 /* GKTextField.swift */,
 			);
 			name = GKAlertView;
+			sourceTree = "<group>";
+		};
+		C1AC43871981917E008A33BD /* GKAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C1AC43881981917E008A33BD /* GKAlertView-Bridging-Header.h */,
+				C1AC43891981917E008A33BD /* GKAlertViewController.swift */,
+				C1AC438B1981917E008A33BD /* GKAlertViewShowTransition.swift */,
+				C1AC438A1981917E008A33BD /* GKAlertViewHideTransition.swift */,
+				C1AC438C1981917E008A33BD /* UIImage+Effects.h */,
+				C1AC438D1981917E008A33BD /* UIImage+Effects.m */,
+			);
+			name = GKAlertController;
+			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A10AE0198038A50013AA29 /* GKTextField.swift in Sources */,
+				C1AC438E1981917E008A33BD /* GKAlertViewController.swift in Sources */,
 				C1A10ADC1980362F0013AA29 /* GKTextAlertContentView.swift in Sources */,
+				C1AC43901981917E008A33BD /* GKAlertViewShowTransition.swift in Sources */,
 				C114CE53197EF07200A7AE08 /* ViewController.swift in Sources */,
 				C114CE6E197EF0E500A7AE08 /* GKAlertView.swift in Sources */,
+				C1AC43911981917E008A33BD /* UIImage+Effects.m in Sources */,
 				C114CE51197EF07200A7AE08 /* AppDelegate.swift in Sources */,
+				C1AC438F1981917E008A33BD /* GKAlertViewHideTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +381,7 @@
 				INFOPLIST_FILE = GKAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GKAlertView/AlertController/GKAlertView-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -364,7 +393,7 @@
 				INFOPLIST_FILE = GKAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GKAlertView/AlertController/GKAlertView-Bridging-Header.h";
 			};
 			name = Release;
 		};

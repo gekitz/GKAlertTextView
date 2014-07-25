@@ -181,7 +181,6 @@ class GKAlertView: UIView {
         
         self.defaultDismissRotation = degreesToRadian(point.x > center ? 5 : -5)
         
-        
         self.show(false)
     }
     

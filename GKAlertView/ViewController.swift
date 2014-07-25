@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self._showAlert(nil)
+//        self._showAlert(nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    //Private
+    //MARK: Private
     
     @IBAction func _showAlert(sender: UIButton?) {
         let alert = GKAlertView(frame: CGRectMake(0, 0, 320, 568))
@@ -30,6 +30,11 @@ class ViewController: UIViewController {
             alert.show(false)
         };
         alert.show(true)
+    }
+    
+    @IBAction func _showAlertController(sender: UIButton) {
+        let ctr = GKAlertViewController(nibName: nil, bundle: nil)
+        self.presentViewController(ctr, animated: true, completion: nil)
     }
 }
 
