@@ -26,12 +26,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCG-1B-QRg">
-                                <rect key="frame" x="277" y="330" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="277" y="330" width="64" height="30"/>
+                                <state key="normal" title="Text Alert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="_showAlertController:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z6R-rq-vUj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzo-YN-gOn">
+                                <rect key="frame" x="277" y="368" width="86" height="30"/>
+                                <state key="normal" title="Normal Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="_showNormalAlertController:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XUv-6C-Rxr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,6 +49,8 @@
                             <constraint firstAttribute="centerY" secondItem="tdg-og-0sW" secondAttribute="centerY" id="CMI-Wd-SMn"/>
                             <constraint firstItem="NCG-1B-QRg" firstAttribute="top" secondItem="tdg-og-0sW" secondAttribute="bottom" constant="15" id="D1L-68-6sn"/>
                             <constraint firstAttribute="centerX" secondItem="tdg-og-0sW" secondAttribute="centerX" id="JZS-Bk-Fpj"/>
+                            <constraint firstItem="Hzo-YN-gOn" firstAttribute="top" secondItem="NCG-1B-QRg" secondAttribute="bottom" constant="8" symbolic="YES" id="S49-Rh-bjn"/>
+                            <constraint firstItem="Hzo-YN-gOn" firstAttribute="leading" secondItem="NCG-1B-QRg" secondAttribute="leading" id="YBL-ck-viK"/>
                             <constraint firstItem="NCG-1B-QRg" firstAttribute="leading" secondItem="tdg-og-0sW" secondAttribute="leading" id="bI6-Vd-GhU"/>
                         </constraints>
                     </view>

@@ -14,12 +14,12 @@ class GKTextField: UITextField {
     @IBInspectable var backgroundColoring: UIColor?
     @IBInspectable var placeholderBackgroundColor: UIColor?
     
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         _initialize()
     }
     
-    init(coder aDecoder: NSCoder!)  {
+    required init(coder aDecoder: NSCoder!)  {
         super.init(coder: aDecoder)
         _initialize()
     }

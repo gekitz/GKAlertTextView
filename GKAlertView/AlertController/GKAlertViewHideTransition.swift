@@ -11,7 +11,7 @@ import UIKit
 class GKAlertViewHideTransition: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
-        return 0.25
+        return 10
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {
@@ -26,11 +26,15 @@ class GKAlertViewHideTransition: NSObject, UIViewControllerAnimatedTransitioning
         transitionContext.containerView().insertSubview(backgroundView, aboveSubview: toCtr.view)
         
 
+        let backView = transitionContext.containerView().window?.viewWithTag(88)
+        let snapView = transitionContext.containerView().window?.viewWithTag(77)
+        
+        
         UIView.animateWithDuration(0.25, delay: 0.0, options:UIViewAnimationOptions.CurveLinear, animations: ({
             
             backgroundView.alpha = 0.0
-            fromCtr.view.transform = CGAffineTransformMakeRotation(degreesToRadian(5))
             fromCtr.view.frame.origin.y = CGRectGetHeight(transitionContext.containerView().bounds);
+            fromCtr.view.transform = CGAffineTransformMakeRotation(degreesToRadian(5))
             
             }), completion:{(finished: Bool) in
                 
@@ -38,6 +42,8 @@ class GKAlertViewHideTransition: NSObject, UIViewControllerAnimatedTransitioning
                 fromCtr.view.removeFromSuperview()
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
                 
+                backView?.removeFromSuperview()
+                snapView?.removeFromSuperview()
             });
     }
 }

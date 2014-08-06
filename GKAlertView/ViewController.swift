@@ -23,17 +23,19 @@ class ViewController: UIViewController {
 
     //MARK: Private
     
-    @IBAction func _showAlert(sender: UIButton?) {
-        let alert = GKAlertView(frame: CGRectMake(0, 0, 320, 568))
-        alert.completion = {(value: String) in
-            println("Got a value from the block \(value)")
-            alert.show(false)
-        };
-        alert.show(true)
+    @IBAction func _showAlertController(sender: UIButton) {
+        let ctr = GKTextAlertViewController()
+        ctr.submitClosure = {(ctr: UIViewController, enteredValue: String) in
+            println("\(enteredValue)")
+        }
+        self.presentViewController(ctr, animated: true, completion: nil)
     }
     
-    @IBAction func _showAlertController(sender: UIButton) {
-        let ctr = GKAlertViewController(nibName: nil, bundle: nil)
+    @IBAction func _showNormalAlertController(sender: UIButton) {
+        let ctr = GKNormalAlertViewController()
+        ctr.success = {(ctr: GKNormalAlertViewController, success: Bool) in
+            println("\(success)")
+        }
         self.presentViewController(ctr, animated: true, completion: nil)
     }
 }

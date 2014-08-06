@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GKNormalAlertViewController" customModule="GKAlertView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="OJG-lu-wEz" id="KCs-dC-QQ8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OJG-lu-wEz" customClass="GKNormalAlertView" customModule="GKAlertView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Path Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-bc-gqs">
+                    <rect key="frame" x="20" y="10" width="220" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="K2F-VQ-rZX">
+                    <rect key="frame" x="10" y="39" width="240" height="67"/>
+                    <string key="text">You'll receive an SMS to verify your phone number and prove you're human. Carrier charges may apply. 
+We don't spam. Period.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ih-pi-kck">
+                    <rect key="frame" x="0.0" y="116" width="260" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BzI-Gw-kaM"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="zIH-EX-fOe"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG8-pH-fqN">
+                    <rect key="frame" x="10" y="116" width="119" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="he5-VW-jdp"/>
+                    </constraints>
+                    <state key="normal" title="Failed">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="_cancelAction:" destination="-2" eventType="touchUpInside" id="su3-VD-R2J"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzx-bq-Y44">
+                    <rect key="frame" x="129" y="117" width="1" height="71"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="hhy-0Z-dXS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgN-qM-0BS">
+                    <rect key="frame" x="130" y="116" width="130" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="pGV-aj-2qP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Success">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="_submitAction:" destination="-1" eventType="touchUpInside" id="F8r-E8-9hV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dzx-bq-Y44" firstAttribute="top" secondItem="3ih-pi-kck" secondAttribute="bottom" id="14s-p8-ave"/>
+                <constraint firstAttribute="bottom" secondItem="dzx-bq-Y44" secondAttribute="bottom" id="4Jj-jc-qZ5"/>
+                <constraint firstAttribute="trailing" secondItem="K2F-VQ-rZX" secondAttribute="trailing" constant="10" id="6B2-GM-xJh"/>
+                <constraint firstItem="K2F-VQ-rZX" firstAttribute="leading" secondItem="OJG-lu-wEz" secondAttribute="leading" constant="10" id="B3k-ow-a3d"/>
+                <constraint firstAttribute="centerX" secondItem="dzx-bq-Y44" secondAttribute="centerX" id="EZc-7I-7Oq"/>
+                <constraint firstAttribute="trailing" secondItem="5VW-bc-gqs" secondAttribute="trailing" constant="20" id="EZy-x0-ceC"/>
+                <constraint firstItem="5VW-bc-gqs" firstAttribute="leading" secondItem="OJG-lu-wEz" secondAttribute="leading" constant="20" id="F00-Wy-g7K"/>
+                <constraint firstAttribute="trailing" secondItem="LgN-qM-0BS" secondAttribute="trailing" id="RTM-1U-bWM"/>
+                <constraint firstItem="rG8-pH-fqN" firstAttribute="leading" secondItem="OJG-lu-wEz" secondAttribute="leading" constant="10" id="SV9-0Q-5oK"/>
+                <constraint firstItem="rG8-pH-fqN" firstAttribute="top" secondItem="K2F-VQ-rZX" secondAttribute="bottom" constant="10" id="TQr-mg-tPD"/>
+                <constraint firstItem="5VW-bc-gqs" firstAttribute="top" secondItem="OJG-lu-wEz" secondAttribute="top" constant="10" id="UG1-rO-mno"/>
+                <constraint firstItem="3ih-pi-kck" firstAttribute="top" secondItem="K2F-VQ-rZX" secondAttribute="bottom" constant="10" id="WUs-vM-1An"/>
+                <constraint firstItem="K2F-VQ-rZX" firstAttribute="top" secondItem="5VW-bc-gqs" secondAttribute="bottom" constant="10" id="dog-Cj-p5v"/>
+                <constraint firstItem="LgN-qM-0BS" firstAttribute="leading" secondItem="dzx-bq-Y44" secondAttribute="trailing" id="fU1-Sd-1Y8"/>
+                <constraint firstAttribute="trailing" secondItem="3ih-pi-kck" secondAttribute="trailing" id="hBY-et-uhb"/>
+                <constraint firstItem="LgN-qM-0BS" firstAttribute="centerY" secondItem="rG8-pH-fqN" secondAttribute="centerY" id="sQw-jc-gz4"/>
+                <constraint firstItem="dzx-bq-Y44" firstAttribute="leading" secondItem="rG8-pH-fqN" secondAttribute="trailing" id="tgV-Ee-hTC"/>
+                <constraint firstItem="3ih-pi-kck" firstAttribute="leading" secondItem="OJG-lu-wEz" secondAttribute="leading" id="vI8-bq-z4K"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="submitButton" destination="rG8-pH-fqN" id="tMy-UR-sZN"/>
+                <outlet property="textLabel" destination="K2F-VQ-rZX" id="0gF-Rs-1Uf"/>
+                <outlet property="titleLabel" destination="5VW-bc-gqs" id="IXM-L9-4oL"/>
+            </connections>
+            <point key="canvasLocation" x="-448" y="-191"/>
+        </view>
+    </objects>
+</document>
