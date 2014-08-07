@@ -30,7 +30,7 @@ class GKAlertViewHideTransition: NSObject, UIViewControllerAnimatedTransitioning
         let snapView = transitionContext.containerView().window?.viewWithTag(77)
         
         
-        UIView.animateWithDuration(0.25, delay: 0.0, options:UIViewAnimationOptions.CurveLinear, animations: ({
+        UIView.animateWithDuration(0.25, delay: 0.0, options:.CurveLinear, animations: ({
             
             backgroundView.alpha = 0.0
             fromCtr.view.frame.origin.y = CGRectGetHeight(transitionContext.containerView().bounds);

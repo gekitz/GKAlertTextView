@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-func degreesToRadian(degree: Double) -> CGFloat{
+func degreesToRadian(degree: Double) -> CGFloat {
     let radians:Double =  (degree) / 180.0 * M_PI
     return CGFloat(radians)
 }

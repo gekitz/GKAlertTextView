@@ -17,6 +17,11 @@ class GKTextAlertViewController: GKAlertViewController, UITextFieldDelegate {
     
     var submitClosure: ((controller:UIViewController, enteredValue: String) -> ())?
     
+    var titleString:String?
+    var messageString:String?
+    var submitButtonText:String?
+    var placeholderText:String?
+    
     init() {
         super.init(nibName: "GKTextAlertViewController", bundle: nil)
     }
@@ -33,6 +38,8 @@ class GKTextAlertViewController: GKAlertViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         self.textField.becomeFirstResponder();
+        
+        self._updateInterface()
     }
     
     //MARK: Action
@@ -41,6 +48,25 @@ class GKTextAlertViewController: GKAlertViewController, UITextFieldDelegate {
             submitClosure(controller: self, enteredValue: self.textField.text)
         }
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    //Mark: Private
+    private func _updateInterface() {
+        if let titleString = self.titleString? {
+            self.titleLabel.text = titleString
+        }
+        
+        if let messageString = self.messageString? {
+            self.textLabel.text = messageString
+        }
+        
+        if let placeholderText = self.placeholderText? {
+            self.textField.placeholder = placeholderText
+        }
+        
+        if let submitButtonText = self.submitButtonText? {
+            self.submitButton.setTitle(submitButtonText, forState: UIControlState.Normal)
+        }
     }
     
     //MARK: TextField Delegate
